@@ -1,5 +1,6 @@
 fun main(args: Array<String>) {
-    var array : Array<Int> = arrayOf(0,5,4,3,1,2);
+    var array : Array<Int> = args.map { it.toInt() }.toTypedArray()
+
     array = mergeSort(array)
 }
 
