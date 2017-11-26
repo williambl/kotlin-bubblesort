@@ -3,7 +3,7 @@ fun main(args: Array<String>) {
     array = mergeSort(array)
 }
 
-fun mergeSort (array: Array<Int>): Array<Int> {
+fun bubbleSort (array: Array<Int>): Array<Int> {
     var done : Boolean = false
 
     while (done == false) {
