@@ -1,16 +1,16 @@
-fun main(args: Array<String>) {
-    var array : Array<Int> = args.map { it.toInt() }.toTypedArray()
+package bubbleSort
 
-    array = mergeSort(array)
+fun main(args: Array<String>) {
+    var array: Array<Int> = args.map { it.toInt() }.toTypedArray()
+    array = bubbleSort(array)
 }
 
 fun bubbleSort (array: Array<Int>): Array<Int> {
     var done : Boolean = false
-
     while (done == false) {
         var index: Int = 0
         done = true
-        while (index < array.size-1) { // Move through the array
+        while (index < array.size - 1) { // Move through the array
 
             if (array[index] > array[index + 1]) { // If the next item is larger than current
 
@@ -31,5 +31,5 @@ fun bubbleSort (array: Array<Int>): Array<Int> {
             index++
         }
     }
-    return(array)
+    return (array)
 }
