@@ -1,11 +1,11 @@
 package bubbleSort
 
 fun main(args: Array<String>) {
-    var array: Array<Int> = args.map { it.toInt() }.toTypedArray()
+    var array: Array<Float> = args.map { it.toFloat() }.toTypedArray()
     array = bubbleSort(array)
 }
 
-fun bubbleSort (array: Array<Int>): Array<Int> {
+fun bubbleSort (array: Array<Float>): Array<Float> {
     var done : Boolean = false
     while (done == false) {
         var index: Int = 0
